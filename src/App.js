@@ -20,6 +20,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>Welcome to my site!</p>
+        <p>More work comming soon.</p>
       </header>
     </div>
   );
