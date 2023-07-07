@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import App, { tellMeGoodorBad } from "./App";
+import App, { doubleMyNumber, tellMeGoodorBad } from "./App";
 
 test("renders Welcome text", () => {
   render(<App />);
@@ -16,6 +16,11 @@ test("returns a positive string value", () => {
 test("returns a negative string value", () => {
   expect(tellMeGoodorBad("e")).toBe("we got problems");
   //its all working!
+});
+
+test("return the given number x2", () => {
+  console.log("SHOULD BE 20 ====>", doubleMyNumber(10));
+  expect(doubleMyNumber(10)).toEqual("Your number doubled is 20");
 });
 
 // test("console log response", () => {

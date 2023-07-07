@@ -4,17 +4,21 @@ import "./App.css";
 export function tellMeGoodorBad(value) {
   const Message = value;
   if (Message == "Good") {
-    console.log(`The response has returned ${Message}`);
     return `The response has returned ${Message}`;
   } else {
-    console.log("we got problems");
     return "we got problems";
   }
 }
 
+export function doubleMyNumber(number) {
+  const numberDoubled = number * 2;
+  return `Your number doubled is ${numberDoubled}`;
+}
+
 function App() {
   // console.log("Hello World!", 1);
-  tellMeGoodorBad("Good");
+  console.log(tellMeGoodorBad("Good"));
+  console.log(doubleMyNumber(8));
   return (
     <div className="App">
       <header className="App-header">
